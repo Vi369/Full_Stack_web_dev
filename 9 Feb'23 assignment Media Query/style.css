@@ -1,0 +1,88 @@
+h1,p{
+    text-align: center;
+}
+.mobile,.tablet,.laptop,.laptop_large{
+    display: none;
+}
+
+
+/* mobile screen */
+
+@media screen and (min-width:0px) {
+    body{
+        background-color: #CA3142;
+    }
+    .mobile{
+        display:block;
+    }
+
+}
+
+/* tablet screen */
+
+@media screen and (min-width:425px) {
+    body{
+        background-color: #75FBFD;
+    }
+    .mobile{
+        display:none;
+    }
+    .tablet{
+        display:block;
+    }
+}
+
+/* laptop screen */
+
+@media screen and (min-width:768px) {
+    body{
+        background-color: #B1882F;
+    }
+    .mobile{
+        display:none;
+    }
+    .tablet{
+        display:none;
+    }
+    .laptop{
+        display:block;
+    }
+}
+
+/* laptop_large screen */
+
+@media screen and (min-width:1024px) {
+    body{
+        background-color: #208B22;
+    }
+    .mobile{
+        display:none;
+    }
+    .tablet{
+        display:none;
+    }
+    .laptop{
+        display:none;
+    }
+    .laptop_large{
+        display:block;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    body{
+        background-color:aquamarine;
+    }
+    .mobile{
+        display:none;
+    }
+    .tablet{
+        display:none;
+    }
+    .laptop{
+        display:none;
+    }
+    .laptop_large{
+        display:none;
+    }
+}
