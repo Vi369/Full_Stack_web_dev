@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Red Rose", cursive;
+}
+
+body{
+    width:100%;
+    width:100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/pexels-maxyne-barcel-10402282 1.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #d9d953;
+}
+
+button{
+    background-color: #e04747;
+    font-family: "Red Rose";
+    font-style: normal;
+    border:none;
+    color:#ffffff;
+    cursor: pointer;
+}
+
+
+/* navigation bar */
+
+.navbar{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.navbar ul li:hover{
+    text-decoration: underline;
+    font-weight: 900;
+    color:#d9d953;
+}
+
+.small-btn{
+    font-weight: 700;
+    padding: 10px 30px;
+    color:#ffffff;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.hero-section{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.hero{
+   margin:0 auto;
+   padding-top: 150px;
+   max-width:fit-content;
+   text-align: center;
+
+}
+
+.hero-heading{
+    
+    font-size:70px;
+    font-weight: 900;
+    color:#d9d953;
+    align-items: center;
+}
+
+.large-btn{
+    font-weight: 900;
+    padding:20px 40px;
+    margin-top: 60px;
+    color:#ffffff;
+    font-size: larger;
+    margin-top: 70px;
+    line-height: 40px;
+}
+
+.bottom{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+}
+
+
+
+
