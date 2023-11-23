@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key down key up</title>
+</head>
+<body>
+    <form action="">
+        <label >Write Only color name all small latter: </label> <br>
+        <input type="text" id="input">
+        <button>Search</button>
+    </form>
+    <script>
+        
+        function color(){
+            input.style.backgroundColor = "yellow";
+        }
+        function normal(){
+            input.style.backgroundColor = "white";
+        }
+        let input = document.getElementById("input");
+        input.addEventListener("keydown",color);
+        input.addEventListener("keyup",normal);
+
+    </script>
+</body>
+</html>

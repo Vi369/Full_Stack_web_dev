@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background changer</title>
+
+    <style>
+        body{
+            padding: 20px 100px;
+            margin: 0px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        p{
+            text-align:justify;
+            font-size: 15px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: auto;
+            
+        }
+        
+
+        #white{
+            background-color: white;
+        }
+
+        #green{
+            background-color: green;
+        }
+        #pink{
+            background-color: pink;
+        }
+        #purple{
+            background-color: purple;
+        }
+        #black{
+            background-color: black;
+        }
+        .btn{
+            
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid 2px black;
+            border-radius: 50%;
+            cursor: pointer;
+
+        }
+        #color-switcher{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onmouseover="bgchange('white')"></span>
+        <span class="btn" id="green" onmouseover="bgchange('green')"></span>
+        <span class="btn" id="pink" onmouseover="bgchange('pink')"></span>
+        <span class="btn" id="purple" onmouseover="bgchange('purple')"></span>
+        <span class="btn" id="black" onmouseover="bgchange('black')"></span>
+    </div>
+
+
+    <h1 class="text">Background changer </h1>
+    <img src="img/services3.jpg" alt="">
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, libero voluptate. Aperiam eum, quod maxime delectus impedit debitis mollitia blanditiis! Iste, ex culpa error autem tempore modi quaerat reprehenderit distinctio eum rem excepturi, illum fugiat! Minus alias magni odit magnam debitis nesciunt. Quos excepturi, omnis assumenda quibusdam velit repudiandae eligendi id vitae perspiciatis? Quia adipisci sunt explicabo esse saepe ex quae officiis et nesciunt nihil iste maiores recusandae possimus vel porro similique quibusdam quod architecto at, magni, pariatur dolores facilis mollitia. Quisquam, est laboriosam sunt enim vero iure aliquam sed facere, molestias esse quasi alias nulla? Autem nesciunt alias odit.
+    </p>
+
+    <script>
+        function bgchange(color){
+            document.body.style.backgroundColor=color;
+            let text=document.getElementsByClassName('text');
+            if(color=="black"){
+                for(let element of text){
+                    element.style.color="white";
+                }
+            }
+            else{
+                for(let element of text){
+                    element.style.color="black";
+                }
+
+            }
+        }
+        
+       
+
+
+    </script>
+</body>
+</html>
