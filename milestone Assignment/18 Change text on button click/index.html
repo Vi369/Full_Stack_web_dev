@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Text</title>
+    <!-- Css -->
+    <style>
+        body{
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 16px;
+            background-color: #808080;
+        }
+        button{
+            padding: 5px 15px;
+            background-color: rgb(236, 171, 8);
+            font-size:larger;
+            font-weight: 800;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">The most affordable learning platform</h1>
+    <button id="btn">click</button>
+    <!-- javascript -->
+    <script>
+    
+        let text = document.getElementById("heading");
+        console.log(text.innerHTML);
+        console.log(text.innerText);
+        
+        let textChanger = document.getElementById("btn");
+        textChanger.addEventListener("click",()=>{
+            if(text.innerText=="Pw skills"){
+                text.innerText = "The most affordable learning platform";
+                console.log("if body");
+            }
+            else{
+                text.innerText = "Pw skills";
+                console.log("else body");
+            }
+        });
+    </script>
+</body>
+</html>

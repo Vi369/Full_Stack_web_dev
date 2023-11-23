@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text highlighting</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text highlighting > 8 characters</h1>
+    <!-- paragraph -->
+    <p id="p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, inventore minima, dicta facere odio corporis ab ex omnis, unde voluptatum harum! Facere placeat unde id at, velit ex! Praesentium similique minus quae dolorum inventore vero, cum optio earum repudiandae. Velit atque tempora vitae deleniti, omnis error distinctio? Quam non praesentium quasi repellat doloremque soluta, facilis ipsam aliquid error culpa asperiores exercitationem, optio ullam, suscipit necessitatibus minus! Ut labore fugiat adipisci! A, deserunt rem quibusdam nulla odio delectus distinctio eos ea harum repudiandae iure quae labore corrupti sed. Distinctio voluptatem at dolorum tempore reiciendis. Voluptatum consectetur iste earum maiores, a inventore?</p>
+
+    <script>
+          function highlightLongWord(){
+            const paragraph = document.getElementById("p");
+            // split the words
+            const splitWords = paragraph.innerHTML.split(' ');
+            const highlightWords = splitWords.map((word) =>
+                word.length>8? `<span class = "highlight">${word}</span>`: word
+            );
+            const joinWords = highlightWords.join(' ');
+            paragraph.innerHTML = joinWords;
+          }
+          highlightLongWord(); //call the function 
+    </script>
+</body>
+</html>

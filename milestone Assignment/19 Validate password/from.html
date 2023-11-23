@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="formContainer">
+        <!-- onsubmit bhi kr sakta hnn pr green message -->
+        <form action="" onsubmit="return validator()">
+            <h2>Login</h2>
+            <label for="email">Email:</label>
+            <input type="text"  placeholder="@example.com" id="email">
+            <label for="password"></label>
+            <input type="password"  placeholder="Password" id="password">
+            <input type="submit" value="Submit">
+        </form>
+        <p id="displayMessage"></p>
+    </div>
+    <script src="ValidatePassword.js"></script>
+</body>
+</html>

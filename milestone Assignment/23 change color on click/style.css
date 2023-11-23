@@ -1,0 +1,22 @@
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(166, 165, 165);
+}
+button{
+    background-color: rgb(241, 173, 173);
+    font-size: large;
+    font-weight: 900;
+    padding: 10px 30px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px black,-2px -2px 2px white;
+}
