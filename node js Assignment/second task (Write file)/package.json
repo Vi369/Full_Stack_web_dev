@@ -1,0 +1,15 @@
+{
+  "name": "first-task",
+  "version": "1.0.0",
+  "description": "this is my first task in node js assignment ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run node"
+  },
+  "keywords": [
+    "node",
+    "nodejs"
+  ],
+  "author": "vikas singh varma",
+  "license": "ISC"
+}
